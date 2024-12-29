@@ -1,2 +1,3 @@
-# STM32Timers
-One plus mode &amp; Output mode
+STM32TIMERS
+FADING
+
