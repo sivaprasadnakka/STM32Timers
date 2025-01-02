@@ -113,7 +113,7 @@ int main(void)
 
 
 
-	 if(HAL_GPIO_ReadPin(GPIOB, GPIO_PIN_13)==GPIO_PIN_SET)
+	 if(HAL_GPIO_ReadPin(GPIOB, GPIO_PIN_13)==GPIO_PIN_SET) // ONE PULSE MODE
 	      {
 	        HAL_TIM_PWM_Start(&htim3, TIM_CHANNEL_3); //start the TIMER 3 in PWM MODE
 	        HAL_Delay(1000);                         
@@ -126,7 +126,7 @@ int main(void)
 	      {
 	        HAL_TIM_PWM_Start(&htim2, TIM_CHANNEL_2); //start the TIMER 2 in PWM MODE
 	      uint32_t CH1;
-	        while (CH1 < 99 )
+	        while (CH1 < 99 ) // OUTPUT MODE
 	        {
 	          TIM2->CCR2 = CH1;
 	          CH1+= 1 ;
